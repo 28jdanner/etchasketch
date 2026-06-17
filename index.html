@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="container">
@@ -13,7 +14,18 @@
     const container = document.querySelector('#container');
     const button = document.querySelector('button');
 
-    
+    function makeGrid(size) {
+        container.innerHTML = '';
+        for (let i=0; i < size * size; i++) {
+            const square = document.makeElement('div');
+            square.style.flex = `1 0 calc(100% / ${size})`;
+            square.style.height = `calc(100% / ${size})`;
+            sqaure.addEventListener('mouseover', () => {
+                square.style.backgroundColor = 'black';
+            });
+        }
+    }
+
 </script>
 
 </body>
