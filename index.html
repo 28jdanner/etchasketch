@@ -25,6 +25,12 @@
             });
         }
     }
+    button.addEventListener('click', () => {
+        let size = parseInt(prompt('put the dims (short for dimensions) that it should have:'));
+        if (size > 0 && size <= 100) {
+            makeGrid(size);
+        }
+    })
 
 </script>
 
