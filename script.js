@@ -15,7 +15,7 @@ function makeGrid(size) {
 }
 
 button.addEventListener('click', () => {
-    let size = parseInt(prompt('Enter the dimensions you want (max 100):'));
+    let size = parseInt(prompt('make the dims(max 100):'));
     if (size > 0 && size <= 100) {
         makeGrid(size);
     }
